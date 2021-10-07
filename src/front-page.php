@@ -2,7 +2,7 @@
 /**
  * The front page
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 // Flexible content

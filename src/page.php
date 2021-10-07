@@ -2,7 +2,7 @@
 /**
  * Page default template
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 // Breadcrumbs

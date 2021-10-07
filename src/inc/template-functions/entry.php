@@ -2,7 +2,7 @@
 /**
  * Entry content
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 

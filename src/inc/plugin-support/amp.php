@@ -2,7 +2,7 @@
 /**
  * AMP
  *
- * @package hum-core
+ * @package hum-core-acf
  * @author Bill Erickson
  * @license GPL-2.0+
  */

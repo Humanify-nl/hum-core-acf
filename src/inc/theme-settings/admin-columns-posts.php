@@ -2,7 +2,7 @@
 /**
  * Admin columns for posts
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 /**

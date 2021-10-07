@@ -2,7 +2,7 @@
 /**
  * Setup admin
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 /**

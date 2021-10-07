@@ -2,7 +2,7 @@
 /**
  * Layout (sidebars)
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
  /**

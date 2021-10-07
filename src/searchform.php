@@ -2,7 +2,7 @@
 /**
  * Search form template
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 $title = esc_html__('Search for', 'hum-core');

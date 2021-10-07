@@ -2,7 +2,7 @@
 /**
  * Enqueueue scripts
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 function hum_scripts() {

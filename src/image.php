@@ -2,7 +2,7 @@
 /**
  * The template for displaying image attachments
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 get_header();

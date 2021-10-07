@@ -2,7 +2,7 @@
 /**
  * Admin columns for pages
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 

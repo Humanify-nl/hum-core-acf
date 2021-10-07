@@ -3,7 +3,7 @@
  * The header for our theme
  * <head> section and everything up until content
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 ?>
 <!doctype html>

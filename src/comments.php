@@ -3,7 +3,7 @@
  * The template for displaying comments
  * Current comments and comment form
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 if ( post_password_required() ) {

@@ -2,7 +2,7 @@
 /**
  * Archive - functions
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 /**

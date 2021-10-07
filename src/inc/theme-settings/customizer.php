@@ -2,7 +2,7 @@
 /**
  * Theme Customizer.
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 /**

@@ -2,7 +2,7 @@
 /**
  * Grid class builder
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 if ( !function_exists( 'hum_grid_class' ) ) {

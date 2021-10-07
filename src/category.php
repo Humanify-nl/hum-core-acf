@@ -2,7 +2,7 @@
 /**
  * Category template
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 // Build the page

@@ -4,7 +4,7 @@
  *
  * ACF field: group_5f76e008a957f
  *
- * @package hum-core
+ * @package hum-core-acf
  */
 
 if ( !function_exists( 'hum_row_class' ) ) {
