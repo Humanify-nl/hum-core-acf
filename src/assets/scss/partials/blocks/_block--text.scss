@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+### Block--text
+--------------------------------------------------------------*/
+.block--text {
+  word-break: normal;
+  word-wrap: break-word;
+  //user-select: none;
+
+  h2 {
+    margin: var(--global--spacing-vertical) 0 0 0;
+
+    + h3,
+    + ul,
+    + ol,
+    + p {
+      margin-top: var(--global--text-margin);
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    margin: var(--global--text-margin) 0 0 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    + ul,
+    + ol,
+    + p {
+      margin-top: var(--global--text-margin);
+    }
+  }
+
+  h4 {
+    margin: var(--global--text-margin) 0 0 0;
+
+    + p {
+      margin-top: var(--global--text-margin);
+    }
+
+    ~ ul {
+      margin-top: calc(var(--global--text-margin) * 0.25);
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ol + p,
+  ul + p,
+  p + ol,
+  p + ul {
+    margin-top: var(--global--text-margin);
+  }
+}

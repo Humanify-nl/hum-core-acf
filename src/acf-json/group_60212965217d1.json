@@ -1,0 +1,83 @@
+{
+    "key": "group_60212965217d1",
+    "title": "Partial > Collapse",
+    "fields": [
+        {
+            "key": "field_5c9623da8af10",
+            "label": "",
+            "name": "collapse_repeater",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5c9623e58af11",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "+ Nieuwe vraag",
+            "sub_fields": [
+                {
+                    "key": "field_5c9623e58af11",
+                    "label": "Question",
+                    "name": "collapse_question",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6153272787dfd",
+                    "label": "Answer",
+                    "name": "collapse_answer",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "acf\/partials\/collapse",
+    "modified": 1632839664
+}

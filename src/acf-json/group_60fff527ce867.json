@@ -1,0 +1,50 @@
+{
+    "key": "group_60fff527ce867",
+    "title": "Partial > Previews page",
+    "fields": [
+        {
+            "key": "field_60fff5e58ae7f",
+            "label": "Preview type",
+            "name": "preview_page_select",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "preview-page": "Default",
+                "preview-page--icon": "Icon",
+                "preview-page--link": "Link"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1627990103
+}

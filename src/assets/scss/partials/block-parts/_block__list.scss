@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+### block__list
+--------------------------------------------------------------*/
+.block__list {
+  color: inherit;
+  line-height: 1.5;
+  margin: 0;
+
+  li {
+    list-style: none;
+    padding: 0.25em 0;
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  &.pad {
+    padding: var(--global--padding);
+  }
+}

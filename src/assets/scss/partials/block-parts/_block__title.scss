@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+### block__title
+--------------------------------------------------------------*/
+.block__title {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  &.pad {
+    padding-left: var(--global--padding);
+    padding-right: var(--global--padding);
+  }
+
+  &.inside {
+    //background-color: rgba(theme(site, base), 0.5);
+    position: absolute;
+    padding: var(--global--padding);
+    text-shadow: $text_shadow;
+  }
+}

@@ -1,0 +1,35 @@
+
+// Preview
+
+.preview {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+// Spacing
+
+// after meta
+.preview__category + .preview__title,
+.preview__category + .preview__excerpt,
+.preview__category + .preview__footer,
+// after thumb
+.preview__img + .preview__title,
+.preview__img + .preview__category,
+// after title
+.preview__title + .preview__excerpt,
+.preview__title + .preview__category,
+// after text
+.preview__excerpt + .preview__category,
+.preview__excerpt + .preview__footer {
+  margin-top: var(--global--padding-inner);
+}
+
+// foot
+.preview__excerpt + .preview__footer {
+  margin-top: var(--global--padding-inner);
+  @include bp-min($medium){ margin-top: auto; }
+}

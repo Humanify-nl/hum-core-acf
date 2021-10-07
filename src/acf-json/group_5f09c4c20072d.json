@@ -1,0 +1,42 @@
+{
+    "key": "group_5f09c4c20072d",
+    "title": "Partial > Google Map",
+    "fields": [
+        {
+            "key": "field_5f09c4ce386f3",
+            "label": "Google Map",
+            "name": "location_map",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": 15,
+            "height": 300
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "acf\/partials\/map",
+    "modified": 1626254670
+}

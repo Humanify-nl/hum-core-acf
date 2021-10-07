@@ -1,0 +1,130 @@
+
+/* Site layout
+---------------------------------------------------------------------------------------------------- */
+
+.content-fullwidth {
+
+  .wrap {
+    max-width: var(--global-alignwide);
+  }
+
+  // wrap (no flex fields)
+  .wrap-content {
+
+    .site-main article {
+
+      > * {
+        max-width: var(--global-alignwide);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .wrap {
+        max-width: unset;
+        width: 100%;
+      }
+    }
+  }
+
+  &.archive {
+    .grid-previews {
+      max-width: var(--global-alignwide);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+
+.content-center {
+
+  .wrap {
+    max-width: var(--global-aligncenter);
+  }
+
+  // wrap (no flex fields)
+  .wrap-content {
+
+    .site-main article {
+
+      > * {
+        max-width: var(--global-aligncenter);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .wrap {
+        max-width: unset;
+        width: 100%;
+      }
+    }
+  }
+
+  &.archive {
+    .grid-previews {
+      max-width: var(--global-aligncenter);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+.content-sidebar {
+
+  .site-main {
+    > * {
+      max-width: var(--global-aligncenter);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+
+/* Sidebar Layouts
+--------------------------------------------- */
+
+@include bp-max($medium) {
+
+	.sidebar-primary {
+		display: none;
+	}
+}
+
+@include bp-min($medium) {
+
+	.content-sidebar {
+
+		.content-area {
+      max-width: var(--global-alignwide);
+      margin-left: auto;
+      margin-right: auto;
+			display: grid;
+			grid-template-columns: 1fr $width-sidebar;
+			grid-column-gap: calc(2 * var(--global--block-gap));
+		}
+
+		.site-main {
+			width: 100%;
+			max-width: var(--global-aligncenter);
+		}
+
+		.sidebar-primary {
+			width: 100%;
+		}
+	}
+}
+
+
+/* Box Sizing
+--------------------------------------------- */
+
+html,
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

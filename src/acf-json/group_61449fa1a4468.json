@@ -1,0 +1,70 @@
+{
+    "key": "group_61449fa1a4468",
+    "title": "Mod > Grid class",
+    "fields": [
+        {
+            "key": "field_61449fa1b1113",
+            "label": "Grid columns",
+            "name": "grid_class",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "grid--60": "60% - 40%",
+                "grid--50": "50% - 50%",
+                "grid--40": "40% - 60%",
+                "grid--100": "100%"
+            },
+            "default_value": "grid-100",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61449fa1b4b9b",
+            "label": "Reverse",
+            "name": "grid_reverse",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "66.6666",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "inc\/acf\/acf-grid-class",
+    "modified": 1631961795
+}

@@ -1,0 +1,30 @@
+
+/* Blockquote
+--------------------------------------------- */
+
+blockquote {
+	padding-top: 36px + 11px;
+	text-align: left;
+
+	p {
+		color: var(--blockquote--color-text), var(--global--color-base);
+		font-size: var(--global--font-size-large);
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	cite {
+		color: var(--blockquote--color-text), var(--global--color-base);
+		display: block;
+		font-size: var(--global--font-size-normal);
+		font-weight: 700;
+		margin-top: 12px;
+		opacity: .5;
+		text-transform: uppercase;
+	}
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+
+}

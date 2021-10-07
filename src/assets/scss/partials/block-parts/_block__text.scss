@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+### block__text
+--------------------------------------------------------------*/
+.block__text {
+  color: inherit;
+
+  p {
+    margin: 0 0 var(--global--text-margin) 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &.is-excerpt p {
+    margin: 0 0 var(--global--padding) 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p + ul {
+    margin-top: 0;
+  }
+
+  &.pad {
+    padding-left: var(--global--padding);
+    padding-right: var(--global--padding);
+  }
+
+}
+
+
+.block__text--small {
+  font-size: var(--global--font-size-small);
+
+  p {
+    font-size: inherit;
+  }
+}

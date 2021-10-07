@@ -1,0 +1,23 @@
+
+// Block-partials
+
+@import "block-parts/block__body";
+@import "block-parts/block__img";
+@import "block-parts/block__img--icon";
+@import "block-parts/block__img--slider";
+@import "block-parts/block__text";
+@import "block-parts/block__title";
+@import "block-parts/block__link";
+@import "block-parts/block__list";
+//@import "block-partials/block__btn"; // fix icons
+//@import "block-partials/block__link--icon"; // fix icons
+
+
+// Blocks
+
+@import "blocks/block--text";
+@import "blocks/block--text-multi";
+@import "blocks/block--image";
+@import "blocks/block--slider";
+@import "blocks/block--gallery";
+@import "blocks/block--collapse";

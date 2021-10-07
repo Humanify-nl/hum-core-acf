@@ -1,0 +1,95 @@
+
+/* Grid
+--------------------------------------------- */
+.grid {
+  width: 100%;
+
+  &.reverse {
+    flex-direction: column-reverse;
+    @include bp-min($medium){
+      flex-direction: row-reverse;
+    }
+  }
+
+  &.grid--100 {
+
+    > .block + .block {
+      margin-top: var(--global--block-gap);
+    }
+  }
+
+  &.grid--40 {
+    @include flex-row-mobile(100);
+    @include flex-row-tablet-up(40);
+    @include flex-row-desktop(40);}
+
+  &.grid--50 {
+    @include flex-row-mobile(100);
+    @include flex-row-tablet-up(50);
+    @include flex-row-desktop(50);
+  }
+
+  &.grid--60 {
+    @include flex-row-mobile(100);
+    @include flex-row-tablet-up(60);
+    @include flex-row-desktop(60);
+  }
+}
+
+
+
+
+.grid-previews {
+  grid-auto-rows: 1fr;
+  width: 100%;
+
+  &.grid--100 {
+    @include columns-mobile(1);
+    @include columns-tablet-up(1);
+  }
+
+  &.grid--50 {
+    @include columns-mobile(1);
+    @include columns-tablet-up(2);
+  }
+
+  &.grid--30 {
+    @include columns-mobile(1);
+    @include columns-tablet-up(3);
+  }
+
+  &.grid--25 {
+    @include columns-mobile(2);
+    @include columns-tablet-up(4);
+  }
+}
+
+
+.grid--gallery {
+
+  .gallery__img {
+    width: 100%;
+  }
+
+  $gallery_item_element: '.gallery-frame';
+
+  &.grid--50 {
+    @include columns-mobile(1, $gallery_item_element, $grid-gap-gallery);
+    @include columns-tablet-up(2, $gallery_item_element, $grid-gap-gallery);
+  }
+
+  &.grid--30 {
+    @include columns-mobile(1, $gallery_item_element, $grid-gap-gallery);
+    @include columns-tablet-up(3, $gallery_item_element, $grid-gap-gallery);
+  }
+
+  &.grid--25 {
+    @include columns-mobile(2, $gallery_item_element, $grid-gap-gallery);
+    @include columns-tablet-up(4, $gallery_item_element, $grid-gap-gallery);
+  }
+
+  &.grid--20 {
+    @include columns-mobile(2, $gallery_item_element, $grid-gap-gallery);
+    @include columns-tablet-up(5, $gallery_item_element, $grid-gap-gallery);
+  }
+}

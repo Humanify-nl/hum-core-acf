@@ -1,0 +1,48 @@
+{
+    "key": "group_5d0937c170a0c",
+    "title": "Partial > Page icon",
+    "fields": [
+        {
+            "key": "field_5d0937cd599b4",
+            "label": "Icon",
+            "name": "page_icon",
+            "type": "image",
+            "instructions": "512 x 512 pixels PNG",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 520,
+            "max_height": 520,
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page-landing.php"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "pages\/page\/preview-page__icon",
+    "modified": 1627641651
+}

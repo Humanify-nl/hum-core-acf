@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------
+### block__list--collapse
+--------------------------------------------------------------*/
+.block__list--collapse {
+
+  .block__item--collapse {
+    margin-bottom: var(--global--text-margin);
+    list-style: none;
+    flex-direction: row;
+    position: relative;
+
+    &.toggled {
+
+      .svg-icon {
+
+        &.open {
+          display: none;
+        }
+        &.close {
+          display: inline;
+        }
+      }
+
+    }
+
+    .btn-collapse {
+      // reset button
+      border: none;
+      cursor: pointer;
+      background: none;
+      display: block;
+      text-align: left;
+      // style
+      border-bottom: 1px solid;
+      padding: var(--global--padding-inner) ($icon_size + var(--global--padding-inner)) var(--global--padding-inner) 0;
+      position: relative;
+      width: 100%;
+
+      &:hover,
+      &:active {
+        //color: theme(main, text);
+      }
+    }
+
+    .svg-icon {
+      position: absolute;
+      top: 0 + var(--global--padding-inner);
+      right: 0;
+
+      &:hover,
+      &:active {
+        //fill: theme(main, text);
+      }
+
+      &.open {
+        display: inline;
+      }
+      &.close {
+        display: none;
+      }
+    }
+
+
+
+
+    // collapse--card
+    .block__body--collapse {
+      @include trans(0.2, height);
+      cursor: pointer;
+      transform: translateZ(0);
+      position: relative;
+      overflow: hidden;
+      height: 0;
+      width: 100%;
+
+      .block__text {
+        @include trans(0.3, opacity);
+        opacity: 0;
+      }
+
+      // toggled infocard
+      &.toggled {
+        height: 80px; // gets modified by js to fit text
+        margin: var(--global--text-margin) 0 var(--global--text-margin) 0;
+
+        .block__text {
+          opacity: 1;
+        }
+
+        .block__footer {
+          display: flex;
+          flex-direction: row-reverse;
+          @include bp-max($small) {
+            margin-top: 0.75rem;
+            flex-direction: row;
+          }
+
+          .block__btn {
+            margin-top: auto;
+          }
+        }
+      }
+    }
+
+  }
+}

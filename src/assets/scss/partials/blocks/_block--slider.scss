@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+### Block--slider
+--------------------------------------------------------------*/
+.block--slider {
+
+  .block__swiper {
+    display: block;
+    position:relative;
+    width: 100%;
+  }
+
+  .swiper-slide {
+    height: auto;
+
+    .preview {
+      height: 100%;
+    }
+  }
+  .swiper-container--reviews,
+  .swiper-container--posts {
+    overflow: hidden;
+    margin: 0 auto;
+    width: calc(100% - 38px);
+
+    @include bp-min($small){
+      width: 100%;
+    }
+  }
+
+  // swiper buttons
+  .swiper-button-next {
+    right: -7px;
+    @include bp-min($small){
+      right: -48px;
+    }
+  }
+  .swiper-button-prev {
+    left: -7px;
+    @include bp-min($small){
+      left: -48px;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+
+    &:after {
+      color: theme(main, grey);
+      @include bp-max($small){
+        font-size: 1.5rem;
+      }
+    }
+    &:hover {
+      &:after {
+        color: theme(main, link);
+      }
+      &:active,
+      &:focus {
+        color: theme(main, link-a);
+      }
+    }
+
+  }
+}

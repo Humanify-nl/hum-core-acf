@@ -1,0 +1,65 @@
+{
+    "key": "group_5d0cc369d3ec3",
+    "title": "Partial > Page category",
+    "fields": [
+        {
+            "key": "field_5d0cc3759ad7f",
+            "label": "Kies categorie voor posts",
+            "name": "page_category_id",
+            "type": "taxonomy",
+            "instructions": "Relateer deze pagina aan een categorie.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "select",
+            "allow_null": 1,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_60b0acd0d0ff0",
+            "label": "Toon posts",
+            "name": "page_cats_enable",
+            "type": "true_false",
+            "instructions": "Toon posts binnen categorie",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page-landing.php"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "acf\/queries\/row--posts__cat",
+    "modified": 1626254733
+}

@@ -1,0 +1,32 @@
+
+/* Entry Header
+--------------------------------------------- */
+
+.entry-header {
+  @include row-pad-mobile(1rem);
+  @include row-pad-tablet-up(2rem);
+  @include row-pad-desktop(2rem);
+  border-bottom: 1px solid var(--global--color-grey-light);
+
+  @include bp-min($small) {
+    overflow: hidden;
+    width: 100%;
+
+    .entry-author {
+      float: left;
+      margin: 0;
+    }
+
+    .shared-counts-wrap {
+      float: right;
+    }
+  }
+
+  .wrap > * {
+    margin-bottom: $pad_inner;
+  }
+
+  .wrap > *:last-child {
+    margin-bottom: 0;
+  }
+}

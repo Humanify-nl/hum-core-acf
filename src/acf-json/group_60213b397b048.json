@@ -1,0 +1,43 @@
+{
+    "key": "group_60213b397b048",
+    "title": "Partial > Form ( cf7 )",
+    "fields": [
+        {
+            "key": "field_5b7e7a560d00b",
+            "label": "Form shortcode",
+            "name": "form_form",
+            "type": "text",
+            "instructions": "Plak shortcode hier (Contact -> contact forms -> kies -> copy shortcode)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "acf\/partials\/form",
+    "modified": 1626254667
+}

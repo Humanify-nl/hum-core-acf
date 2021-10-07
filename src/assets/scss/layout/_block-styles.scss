@@ -1,0 +1,9 @@
+
+/* Block
+--------------------------------------------- */
+.block {
+
+  &.has-pad {
+    padding: var(--global--padding);
+  }
+}

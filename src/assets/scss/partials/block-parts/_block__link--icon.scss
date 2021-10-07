@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+### block__link--icon
+--------------------------------------------------------------*/
+.block__link--icon {
+  position: relative;
+  text-indent: -0.5em;
+  padding-left: 1em;
+
+  &::before {
+    @include fa_em();
+    content: "\f0da";
+    padding-right: 0.5em;
+  }
+
+  &.is-after {
+    padding-left: 0.6375em;
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      @include fa_em();
+      content: "\f0da";
+      padding-left: 0.75em;
+    }
+  }
+}

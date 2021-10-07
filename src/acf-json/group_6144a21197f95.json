@@ -1,0 +1,50 @@
+{
+    "key": "group_6144a21197f95",
+    "title": "Mod > Wrap class",
+    "fields": [
+        {
+            "key": "field_6144a22341f8f",
+            "label": "Grid width",
+            "name": "wrap_class",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "alignwide": "Default width",
+                "aligncenter": "Center width",
+                "alignfull": "Full width"
+            },
+            "default_value": "aligndefault",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "inc\/acf\/acf-wrap-class",
+    "modified": 1633013814
+}

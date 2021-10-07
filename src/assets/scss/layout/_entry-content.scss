@@ -1,0 +1,28 @@
+
+/* Entry Content
+--------------------------------------------- */
+.single {
+
+	.entry-content {
+		margin-top: var(--global--text-margin);
+	}
+}
+
+
+.entry-content .block--text {
+	ul, ol {
+		padding-left: 1.5rem;
+
+		li {
+			padding-bottom: .5rem;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			ul, ol {
+				padding-top: .5rem;
+			}
+		}
+	}
+}

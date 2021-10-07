@@ -1,0 +1,123 @@
+
+// Spacing
+
+$spacing-unit: 1rem;
+
+$map-spacing: (
+	spacing-vertical: (
+	  small: 4 * $spacing-unit,
+		medium: 5 * $spacing-unit,
+	  large: 6 * $spacing-unit,
+	),
+	spacing-horizontal: (
+	  small: 1 * $spacing-unit,
+		medium: 2 * $spacing-unit,
+		large: 2 * $spacing-unit,
+	),
+	padding: (
+		small: 0.5 * $spacing-unit,
+		medium: 0.5 * $spacing-unit,
+		large: 1 * $spacing-unit,
+	),
+	padding-inner: (
+		small: 0.375 * $spacing-unit,
+		medium: 0.5 * $spacing-unit,
+		large: 0.5 * $spacing-unit,
+	),
+	block-gap: 2 * $spacing-unit,
+	block-inner-gap: $spacing-unit,
+	grid-gap: 2 * $spacing-unit,
+	grid-gap-preview: 2 * $spacing-unit,
+	grid-gap-gallery: 0.25 * $spacing-unit,
+	elevation: 1px 1px 3px 0 rgba(0, 0, 0, 0.2),
+	text-margin: 1.5 * $spacing-unit,
+	text-margin-x2: 3 * $spacing-unit,
+);
+
+// Row vertical space (internal sass)
+
+$row_pad_s: 4 * $spacing-unit;
+$row_pad_m: 5 * $spacing-unit;
+$row_pad_l: 6 * $spacing-unit;
+
+// Grid
+
+$grid-gap: 32px;
+$grid-gap-preview: 32px;
+$grid-gap-gallery: 8px;
+
+// Blocks
+
+$pad: 1 * $spacing-unit;
+$pad_inner: 0.5 * $spacing-unit;
+
+
+// Root variables
+
+$spacing-prefix: '--global';
+
+:root {
+	@each $selector, $value in $map-spacing {
+
+		@if type-of($value) != "map" {
+			#{$spacing-prefix + '--' + $selector}: $value;
+		}
+	}
+}
+
+@media only screen and (max-width: #{$small}) {
+
+  :root {
+    @each $selector, $breakpoints in $map-spacing {
+      @each $breakpoint-name, $value in $breakpoints {
+
+        @if $breakpoint-name == small {
+          #{$spacing-prefix + '--' + $selector}: $value;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: #{$small}) {
+  :root {
+    @each $selector, $breakpoints in $map-spacing {
+      @each $breakpoint-name, $value in $breakpoints {
+
+        @if $breakpoint-name == medium {
+          #{$spacing-prefix + '--' + $selector}: $value;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: #{$medium}) {
+  :root {
+    @each $selector, $breakpoints in $map-spacing {
+      @each $breakpoint-name, $value in $breakpoints {
+
+        @if $breakpoint-name == large {
+          #{$spacing-prefix + '--' + $selector}: $value;
+        }
+      }
+    }
+  }
+}
+
+
+// Admin-bar height if not exists
+
+:root {
+	--global--admin-bar--height: 0px;
+}
+
+// Admin-bar if exists
+
+.admin-bar {
+	--global--admin-bar--height: 32px;
+
+	@media only screen and (max-width: 782px) {
+		--global--admin-bar--height: 46px;
+	}
+}

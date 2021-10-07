@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+### block__btn
+--------------------------------------------------------------*/
+.block__btn {
+
+  .email,
+  .phone,
+  .facebook,
+  .linkedin,
+  .twitter,
+  .instagram {
+    &::before {
+      @include fa();
+      font-size: 1em;
+      margin-right: 0.25rem;
+    }
+  }
+
+  &.email::before {
+    content:"\f0e0"; // fa-envelope-square
+  }
+
+  &.phone::before {
+    content:"\f098"; // fa-phone-square
+  }
+
+  &.facebook::before {
+    content:"\f082";
+  }
+
+  &.linkedin::before {
+    content:"\f08c";
+  }
+
+  &.twitter::before {
+    content: "\f081";
+  }
+
+  &.instagram::before {
+    content: "\f16d";
+  }
+}
