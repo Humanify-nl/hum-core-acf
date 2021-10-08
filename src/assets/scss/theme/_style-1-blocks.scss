@@ -1,0 +1,25 @@
+
+// Style-1 blocks
+
+.has-style-1 {
+
+  .block-collapse {
+
+    .block__title {
+      border-bottom-color: var(--theme-style-1-titles);
+
+      &::after {
+        color: var(--theme-style-1-titles);
+      }
+    }
+  }
+
+
+  .block-form {
+
+    label {
+      color: var(--theme-style-1-titles);
+    }
+  }
+
+}

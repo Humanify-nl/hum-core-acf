@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+## Theme - primary color scheme
+   blocks
+--------------------------------------------------------------*/
+.has-style-1 {
+
+  .preview-post {
+  }
+
+  .preview-page-icon {
+    background-color: unset;
+
+    .block__img {
+      img {
+        filter: $filter_white;
+      }
+    }
+  }
+
+  .preview-page {
+    background-color: var(--theme--style-1-bg-alt);
+    color: var(--theme--style-1);
+    padding: 1rem;
+
+    p,
+    li {
+      color: var(--theme--main-text);
+    }
+
+    .block__title {
+      color: var(--theme--style-1);
+    }
+
+    .block__link,
+    .btn {
+
+    }
+  }
+
+}
