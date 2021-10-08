@@ -22,6 +22,7 @@
     background-color: #eee;
   }
 
+  &.has-style-1,
   &.has-bg {
     padding-top: var(--global--spacing-vertical);
     padding-bottom: var(--global--spacing-vertical);
@@ -53,6 +54,10 @@
     padding-top: 0;
   }
 
+  &.has-img + .has-style-1,
+  &.has-bg + .has-style-1,
+  &.has-style-1 + .has-img,
+  &.has-style-1 + .has-bg,
   &.has-bg + .has-img,
   &.has-img + .has-bg {
     margin-top: 0;
