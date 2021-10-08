@@ -1,0 +1,29 @@
+.has-style-1 {
+
+  &.row {
+    background-color: theme(style-1, bg);
+    color: theme(style-1, text);
+  }
+
+  .block--text {
+
+    h2, h3, h4 {
+      color: theme(style-1, titles);
+    }
+    p, li {
+      color: theme(style-1, text);
+
+      &::before,
+      &::after {
+        color: inherit;
+      }
+    }
+  }
+
+  blockquote {
+    background-color: theme(style-1, text);
+    border-left: solid 2px theme(style-1, border);
+    border-bottom: solid 1px theme(style-1, border);
+  }
+
+}
