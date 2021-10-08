@@ -3,6 +3,15 @@
 
 .has-style-1 {
 
+  .block {
+
+    .block__img {
+      img {
+        filter: $filter_white;
+      }
+    }
+  }
+
   .block-collapse {
 
     .block__title {
