@@ -18,7 +18,6 @@ include_once( get_template_directory() . '/inc/scripts.php');
 include_once( get_template_directory() . '/inc/acf-functions.php');
 
 
-
 /**
 * Theme support
 *
