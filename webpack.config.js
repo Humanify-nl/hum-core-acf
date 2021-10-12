@@ -101,16 +101,6 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              postcssOptions: {
-                plugins: [
-                  [
-                    "postcss-preset-env",
-                    {
-                      // Options
-                    },
-                  ],
-                ],
-              },
             },
           },
           {
