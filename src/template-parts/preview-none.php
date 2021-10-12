@@ -9,8 +9,10 @@
 <section class="no-results not-found">
 
 	<header class="entry-header">
-    <h1 class="entry-title"><?php esc_html__e( 'Nothing Found', 'hum-core' ) ?></h1>
-  </header>
+		<div class="wrap">
+    	<h1 class="entry-title"><?php esc_html__e( 'Nothing Found', 'hum-core' ) ?></h1>
+		</div>
+	</header>
 
 	<div class="entry-content">
 
