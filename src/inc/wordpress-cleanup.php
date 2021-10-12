@@ -212,6 +212,6 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
  */
 function hum_print_arr( $array ) {
 	echo '<pre>';
-	echo print_r( $array );
+		echo print_r( $array );
 	echo '</pre>';
 }
