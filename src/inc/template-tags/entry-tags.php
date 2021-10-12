@@ -19,9 +19,9 @@ function hum_entry_image_id() {
  * Entry image
  *
  */
- function hum_entry_image( $size = 'post-image' ) {
+function hum_entry_image( $size = 'post-image' ) {
  	echo the_post_thumbnail( $size );
- }
+}
 
 
 /**

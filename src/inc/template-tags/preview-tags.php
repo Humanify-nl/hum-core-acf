@@ -29,7 +29,6 @@ function hum_preview_title( $link = true, $page = false ) {
 	}
 
 	echo '</h3>';
-
 }
 
 
@@ -49,6 +48,7 @@ function hum_preview_date_square() {
 		echo '</div>';
 	echo '</div>';
 }
+
 
 /**
  * Preview category
@@ -122,7 +122,7 @@ function hum_preview_excerpt( $page = false, $class = false ) {
 
 
 /**
- * Preview button
+ * Preview link
  *
  */
 function hum_preview_button( $preview_type = 'post' , $link_title = 'Read more' ) {
