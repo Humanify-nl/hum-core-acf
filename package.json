@@ -1,5 +1,5 @@
 {
-  "name": "hum-core",
+  "name": "hum-core-acf",
   "version": "1.0.0",
   "description": "humanify core theme boilerplate with webpack",
   "private": true,
