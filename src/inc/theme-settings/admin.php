@@ -56,26 +56,6 @@ add_filter('default_page_template_title', function() {
 
 
 /**
- * Reusable Blocks accessible in backend
- * @link https://www.billerickson.net/reusable-blocks-accessible-in-wordpress-admin-area
- *
- */
-function hum_saved_blocks_admin_menu() {
-
-    add_menu_page(
-      'Saved blocks',
-      'Saved blocks',
-      'edit_posts',
-      'edit.php?post_type=wp_block',
-      '',
-      'dashicons-screenoptions',
-      20
-    );
-}
-add_action( 'admin_menu', 'hum_saved_blocks_admin_menu' );
-
-
-/**
  * Page order
  *
  */
@@ -96,7 +76,6 @@ function hum_change_menu_order( $menu_order ) {
         'edit.php?post_type=testimonial',
         'edit.php?post_type=logos',
         'upload.php', // order 10,
-        'edit.php?post_type=wp_block',
     );
 }
 add_filter( 'custom_menu_order', '__return_true' );
