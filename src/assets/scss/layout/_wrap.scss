@@ -10,7 +10,7 @@
     @include calc-width(100, $margin_site_m);
   }
 
-  & .wrap {
+  & .wrap:not(.alignwide):not(.alignfull) {
     margin-left: 0;
     margin-right: 0;
     max-width: 100%;
@@ -18,17 +18,33 @@
   }
 
   &.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
     max-width: var(--global-aligncenter);
   }
 
   &.alignwide {
+    margin-left: auto;
+    margin-right: auto;
     max-width: var(--global-alignwide);
   }
 
   &.alignfull {
     width: 100%;
     max-width: 100%;
+
+    .block--text {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: var(--global-alignwide);
+
+      .content-center & {
+        max-width: var(--global-aligncenter);
+      }
+    }
+
   }
+
 }
 
 .aligncenter {
