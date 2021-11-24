@@ -15,6 +15,7 @@ $row_types = array(
   'collapse',
   'post_query',
   'form',
+  'tabs',
   'page_siblings',
 );
 
